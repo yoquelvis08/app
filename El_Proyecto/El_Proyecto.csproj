@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{307ECB43-1CD8-4A0F-8122-7405AD04442D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>El_Proyecto</RootNamespace>
+    <AssemblyName>El_Proyecto</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Capas.NetFramwork.ADO.Net">
+      <HintPath>..\Capas.NetFramwork.ADO.Net\bin\Debug\Capas.NetFramwork.ADO.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.RichTextEditor, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.Windows.Documents.Core, Version=2022.1.106.40, Culture=neutral, PublicKeyToken=5803cfa389c90ce7" />
+    <Reference Include="TelerikCommon, Version=2022.1.118.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvisoExiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoExiste.Designer.cs">
+      <DependentUpon>AvisoExiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoNegativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoNegativo.Designer.cs">
+      <DependentUpon>AvisoNegativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoPermisos.Designer.cs">
+      <DependentUpon>AvisoPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoRegistro.Designer.cs">
+      <DependentUpon>AvisoRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoVacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoVacio.Designer.cs">
+      <DependentUpon>AvisoVacio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmAcerca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmAcerca.Designer.cs">
+      <DependentUpon>FmAcerca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoEspacio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoEspacio.Designer.cs">
+      <DependentUpon>AvisoEspacio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoInstanciaCreada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoInstanciaCreada.Designer.cs">
+      <DependentUpon>AvisoInstanciaCreada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmENPNCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmENPNCrear.Designer.cs">
+      <DependentUpon>FmENPNCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmENPNEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmENPNEliminar.Designer.cs">
+      <DependentUpon>FmENPNEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmENPNLeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmENPNLeer.Designer.cs">
+      <DependentUpon>FmENPNLeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmENPNModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmENPNModificar.Designer.cs">
+      <DependentUpon>FmENPNModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmEntidades.Designer.cs">
+      <DependentUpon>FmEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmGruposEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmGruposEntidades.Designer.cs">
+      <DependentUpon>FmGruposEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmInformacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmInformacion.Designer.cs">
+      <DependentUpon>FmInformacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmMenuPrincipal.Designer.cs">
+      <DependentUpon>FmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmGEPNEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmGEPNEliminar.Designer.cs">
+      <DependentUpon>FmGEPNEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmGEPNLeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmGEPNLeer.Designer.cs">
+      <DependentUpon>FmGEPNLeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmGEPNModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmGEPNModificar.Designer.cs">
+      <DependentUpon>FmGEPNModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmRegistro.Designer.cs">
+      <DependentUpon>FmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoInstanciaEliminada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoInstanciaEliminada.Designer.cs">
+      <DependentUpon>AvisoInstanciaEliminada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoInstanciaModificada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoInstanciaModificada.Designer.cs">
+      <DependentUpon>AvisoInstanciaModificada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AvisoInstanciaNoExiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvisoInstanciaNoExiste.Designer.cs">
+      <DependentUpon>AvisoInstanciaNoExiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmSplash.Designer.cs">
+      <DependentUpon>FmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmLogin.Designer.cs">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTEPNCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTEPNCrear.Designer.cs">
+      <DependentUpon>FmTEPNCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTEPNEliminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTEPNEliminar.Designer.cs">
+      <DependentUpon>FmTEPNEliminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTEPNLeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTEPNLeer.Designer.cs">
+      <DependentUpon>FmTEPNLeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTEPNModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTEPNModificar.Designer.cs">
+      <DependentUpon>FmTEPNModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmTiposEntidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmTiposEntidades.Designer.cs">
+      <DependentUpon>FmTiposEntidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FmGEPNCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FmGEPNCrear.Designer.cs">
+      <DependentUpon>FmGEPNCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AvisoExiste.resx">
+      <DependentUpon>AvisoExiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoInstanciaCreada.resx">
+      <DependentUpon>AvisoInstanciaCreada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoInstanciaEliminada.resx">
+      <DependentUpon>AvisoInstanciaEliminada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoInstanciaModificada.resx">
+      <DependentUpon>AvisoInstanciaModificada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoInstanciaNoExiste.resx">
+      <DependentUpon>AvisoInstanciaNoExiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoNegativo.resx">
+      <DependentUpon>AvisoNegativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoPermisos.resx">
+      <DependentUpon>AvisoPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoRegistro.resx">
+      <DependentUpon>AvisoRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoVacio.resx">
+      <DependentUpon>AvisoVacio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmAcerca.resx">
+      <DependentUpon>FmAcerca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AvisoEspacio.resx">
+      <DependentUpon>AvisoEspacio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmENPNCrear.resx">
+      <DependentUpon>FmENPNCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmENPNEliminar.resx">
+      <DependentUpon>FmENPNEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmENPNLeer.resx">
+      <DependentUpon>FmENPNLeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmENPNModificar.resx">
+      <DependentUpon>FmENPNModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmEntidades.resx">
+      <DependentUpon>FmEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmGruposEntidades.resx">
+      <DependentUpon>FmGruposEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmInformacion.resx">
+      <DependentUpon>FmInformacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmMenuPrincipal.resx">
+      <DependentUpon>FmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmGEPNEliminar.resx">
+      <DependentUpon>FmGEPNEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmGEPNLeer.resx">
+      <DependentUpon>FmGEPNLeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmGEPNModificar.resx">
+      <DependentUpon>FmGEPNModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmRegistro.resx">
+      <DependentUpon>FmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmSplash.resx">
+      <DependentUpon>FmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmLogin.resx">
+      <DependentUpon>FmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTEPNCrear.resx">
+      <DependentUpon>FmTEPNCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTEPNEliminar.resx">
+      <DependentUpon>FmTEPNEliminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTEPNLeer.resx">
+      <DependentUpon>FmTEPNLeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTEPNModificar.resx">
+      <DependentUpon>FmTEPNModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmTiposEntidades.resx">
+      <DependentUpon>FmTiposEntidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FmGEPNCrear.resx">
+      <DependentUpon>FmGEPNCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo de la aplicacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de text box usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de password de text box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de ayuda de login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de ocultar contraseña.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de ocultar contraseña pequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de X.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de X pequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de otra x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de otra x mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de Registro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de Registro pequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de ayuda de login mas pequeño.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foto Yoque.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Foto Louys.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de atras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de atas mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de atras mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de estado usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de crear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de remover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de update.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de crear mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de delete mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de update mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de read normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de read mas grande.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de leer otro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de crear 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de eliminar 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de leer 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de modificar 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de buscar 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de crear 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de eliminar 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de eliminar 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de comentario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono de descripcion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono id.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
